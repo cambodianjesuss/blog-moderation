@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const { default: axios } = require('axios');
-// const cors = require('cors');
 const app = express();
 
 // app.use(cors()); Not required since it will not need to communicate with react
