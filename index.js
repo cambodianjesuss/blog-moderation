@@ -8,6 +8,10 @@ app.use(bodyParser.json());
 app.post('/events', async (req, res)=>{
 
   const { type, data } = req.body;
+
+  if(type === 'CommentCreated'){
+    // 
+  }
   // Incoming from Comment Service
   if(type === 'CommentUpdated'){
     const status = data.content.includes('orange') ? 'rejected' : 'approved';
